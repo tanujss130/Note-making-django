@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data of Given Title</title>
+</head>
+<body>
+{% for todo in todos %}
+  <p>{{todo.notes}}</p>
+  	<a href="/edit/{{todo.id}}"><input type="submit" value="ADD"></a>
+  	&nbsp
+  <a href="/edit/{{todo.id}}">
+  	<input type="submit" value="Edit"><a></a>
+  	&nbsp
+  	<a href="/back/"><input type="submit" value="Back"></a>
+  	&nbsp
+  </a>
+{% endfor %}
+</body>
+</html>
